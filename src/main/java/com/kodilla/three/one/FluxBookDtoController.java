@@ -7,7 +7,7 @@ import reactor.core.publisher.Flux;
 @RestController
 public class FluxBookDtoController {
 
-    @GetMapping(value = "/books")
+    @GetMapping(value = "books")
     public Flux<Book> getBooks() {
         return Flux
                 .just(new Book("Title one", "Author one", 1995),

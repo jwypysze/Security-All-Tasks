@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(path = "/calculator")
+@RequestMapping(path = "calculator")
 public class CalculatorController implements ApplicationEventPublisherAware {
 
     private final Logger logger = LoggerFactory.getLogger(CalculatorController.class);

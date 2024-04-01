@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class JavaAgentController {
 
-    @RequestMapping(path = "/create", method = RequestMethod.GET)
+    @RequestMapping(path = "agent/create", method = RequestMethod.GET)
     public void createUserAndCallMethod() {
         User user = new User();
         user.doSomething();

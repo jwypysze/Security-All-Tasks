@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping(path = "beanlifecycle")
 public class TaskPostProcessorOfBeansController {
 
     private final LibraryManager libraryManager;
@@ -16,7 +17,7 @@ public class TaskPostProcessorOfBeansController {
 
 
     @ResponseBody
-    @RequestMapping(path = "beanlifecycle/create", method = RequestMethod.GET)
+    @RequestMapping(path = "/create", method = RequestMethod.GET)
     public LibraryManager create() {
         return new LibraryManager();
     }
